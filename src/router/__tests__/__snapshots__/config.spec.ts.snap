@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`routerConfig should match snapshot 1`] = `
+Array [
+  Object {
+    "component": Object {
+      "$$typeof": Symbol(react.lazy),
+      "_init": [Function],
+      "_payload": Object {
+        "_result": [Function],
+        "_status": -1,
+      },
+    },
+    "path": "/home",
+    "title": "Home",
+  },
+  Object {
+    "component": Object {
+      "$$typeof": Symbol(react.lazy),
+      "_init": [Function],
+      "_payload": Object {
+        "_result": [Function],
+        "_status": -1,
+      },
+    },
+    "path": "/private",
+    "title": "Hidden",
+  },
+]
+`;

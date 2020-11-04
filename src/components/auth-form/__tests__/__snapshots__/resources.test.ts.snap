@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthForm resources should snapshot SIGNIN_RESOURCES 1`] = `
+Object {
+  "buttonLabel": "Sign In",
+  "footer": Object {
+    "link": "/signup",
+    "text": "Don't have an account? Sign Up",
+  },
+  "subTitle": "Sign into your account to continue",
+  "title": "Welcome back to FireBase Demo",
+}
+`;
+
+exports[`AuthForm resources should snapshot SIGNUP_RESOURCES 1`] = `
+Object {
+  "buttonLabel": "Sign Up",
+  "footer": Object {
+    "link": "/signin",
+    "text": "Already have an account? Sign In",
+  },
+  "subTitle": "Create an account to start using Firebase Demo",
+  "title": "Welcome to Firebase Demo",
+}
+`;

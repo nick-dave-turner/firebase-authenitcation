@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignUpPage When not authenticated should match snapshot 1`] = `
+"<main class=\\"MuiContainer-root makeStyles-layout-1 MuiContainer-maxWidthSm\\">
+  <div class=\\"MuiPaper-root makeStyles-paper-2 MuiPaper-elevation3 MuiPaper-rounded\\">
+    <h1 class=\\"MuiTypography-root MuiTypography-h5\\">Welcome to Firebase Demo</h1>
+    <h2 class=\\"MuiTypography-root MuiTypography-subtitle1\\">Create an account to start using Firebase Demo</h2>
+    <form class=\\"makeStyles-form-3\\" novalidate=\\"\\">
+      <div class=\\"MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal MuiFormControl-fullWidth\\"><label class=\\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-required Mui-required\\" data-shrink=\\"false\\" for=\\"email\\" id=\\"email-label\\">Email Address<span aria-hidden=\\"true\\" class=\\"MuiFormLabel-asterisk MuiInputLabel-asterisk\\"> *</span></label>
+        <div class=\\"MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl\\"><input aria-invalid=\\"false\\" autocomplete=\\"email\\" id=\\"email\\" name=\\"email\\" required=\\"\\" type=\\"text\\" data-testid=\\"email-input\\" class=\\"MuiInputBase-input MuiInput-input\\" value=\\"\\"></div>
+      </div>
+      <div class=\\"MuiFormControl-root MuiTextField-root MuiFormControl-marginNormal MuiFormControl-fullWidth\\"><label class=\\"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated Mui-required Mui-required\\" data-shrink=\\"false\\" for=\\"password\\" id=\\"password-label\\">Password<span aria-hidden=\\"true\\" class=\\"MuiFormLabel-asterisk MuiInputLabel-asterisk\\"> *</span></label>
+        <div class=\\"MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-fullWidth MuiInput-fullWidth MuiInputBase-formControl MuiInput-formControl\\"><input aria-invalid=\\"false\\" autocomplete=\\"current-password\\" id=\\"password\\" name=\\"password\\" required=\\"\\" type=\\"password\\" data-testid=\\"password-input\\" class=\\"MuiInputBase-input MuiInput-input\\" value=\\"\\"></div>
+      </div><button class=\\"MuiButtonBase-root MuiButton-root MuiButton-contained makeStyles-submit-4 MuiButton-containedPrimary Mui-disabled MuiButton-fullWidth Mui-disabled\\" tabindex=\\"-1\\" type=\\"button\\" data-testid=\\"submit-button\\" disabled=\\"\\"><span class=\\"MuiButton-label\\">Sign Up</span></button>
+    </form>
+    <div class=\\"MuiGrid-root MuiGrid-container\\">
+      <div class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true\\"></div>
+      <div class=\\"MuiGrid-root MuiGrid-item\\"><a class=\\"MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-body2 MuiTypography-colorPrimary\\" href=\\"/signin\\">Already have an account? Sign In</a></div>
+    </div>
+  </div>
+</main>"
+`;
