@@ -1,4 +1,26 @@
+# React Firebase authentication demo
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Setup
+
+1. Signin to your Firebase account or create one if you do not yet have one here: [Firebase](https://console.firebase.google.com/)
+1. Create a new Firebase project in the Firebase console.
+1. Register a new web app within the Firebase project.
+1. Copy your Firebase web apps SDK props into a `.env` at the root of this project.
+
+### Example .env
+
+```
+REACT_APP_API_KEY="AIzaSyD2lNbMy_pkXDibdpVehAT0bxpEek7oxmA"
+REACT_APP_AUTH_DOMAIN="fir-a21bc.firebaseapp.com"
+REACT_APP_DATABASE_URL="https://fir-a21bc.firebaseio.com"
+REACT_APP_PROJECT_ID="fir-a21bc"
+REACT_APP_STORAGE_BUCKET="fir-a21bc.appspot.com"
+REACT_APP_MESSAGING_SENDER_ID="754069068669"
+REACT_APP_APP_ID="1:754069068669:web:8896c693ee03007c410a14"
+REACT_APP_MEASUREMENT_ID="G-H32ZHYH5F7"
+```
 
 ## Available Scripts
 
@@ -26,19 +48,3 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

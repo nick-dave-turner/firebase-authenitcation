@@ -4,6 +4,7 @@ import { useForm } from "..";
 interface MockState {
   mockInput: string;
 }
+
 const MOCK_INITIAL_PROPERTIES = { mockInput: "" };
 const MOCK_VALID_PROPERTIES = { mockInput: "123456" };
 const MOCK_ERROR_MESSAGE = "Mock Error Message.";

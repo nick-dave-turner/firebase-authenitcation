@@ -25,6 +25,7 @@ describe("AuthProvider", () => {
     );
 
     await new Promise((resolve) => setTimeout(resolve, 0));
+
     expect(pretty(container.innerHTML)).toMatchSnapshot();
   });
 });

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as RouterLink } from "react-router-dom";
 
 import Alert from "@material-ui/lab/Alert";
 import Button from "@material-ui/core/Button";
@@ -8,7 +9,6 @@ import Link from "@material-ui/core/Link";
 import Paper from "@material-ui/core/Paper";
 import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
-import { Link as RouterLink } from "react-router-dom";
 
 import { SIGNIN_RESOURCES, SIGNUP_RESOURCES } from "./resources";
 import { useStyles } from "./use-styles";
@@ -31,17 +31,17 @@ export const AuthForm: React.FC<Props> = ({
   type,
 }) => {
   const classes = useStyles();
-  const resoures = type === "SIGNIN" ? SIGNIN_RESOURCES : SIGNUP_RESOURCES;
+  const resources = type === "SIGNIN" ? SIGNIN_RESOURCES : SIGNUP_RESOURCES;
 
   return (
     <Container component="main" className={classes.layout} maxWidth="sm">
       <Paper className={classes.paper} elevation={3}>
         <Typography component="h1" variant="h5">
-          {resoures.title}
+          {resources.title}
         </Typography>
 
         <Typography component="h2" variant="subtitle1">
-          {resoures.subTitle}
+          {resources.subTitle}
         </Typography>
 
         <form className={classes.form} noValidate>
@@ -89,7 +89,7 @@ export const AuthForm: React.FC<Props> = ({
             type="button"
             variant="contained"
           >
-            {resoures.buttonLabel}
+            {resources.buttonLabel}
           </Button>
         </form>
 
@@ -98,10 +98,10 @@ export const AuthForm: React.FC<Props> = ({
           <Grid item>
             <Link
               component={RouterLink}
-              to={resoures.footer.link}
+              to={resources.footer.link}
               variant="body2"
             >
-              {resoures.footer.text}
+              {resources.footer.text}
             </Link>
           </Grid>
         </Grid>

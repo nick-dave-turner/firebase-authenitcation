@@ -9,6 +9,7 @@ import { SignInPage } from "..";
 jest.mock("../../../firebase");
 
 const MOCK_SIGNIN_WITH_EMAIL = jest.fn();
+
 (useAuth as jest.Mock).mockImplementation(() => ({
   signInWithEmail: MOCK_SIGNIN_WITH_EMAIL,
 }));

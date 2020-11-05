@@ -8,6 +8,7 @@ import { HomePage } from "..";
 jest.mock("../../../firebase");
 
 const MOCK_SIGNOUT = jest.fn();
+
 (useAuth as jest.Mock).mockImplementation(() => ({
   signOut: MOCK_SIGNOUT,
 }));

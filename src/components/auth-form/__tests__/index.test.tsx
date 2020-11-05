@@ -5,9 +5,9 @@ import pretty from "pretty";
 
 import { AuthForm } from "..";
 
-const inputs = { email: "", password: "" };
-const handleOnChange = jest.fn();
-const handleOnSubmit = jest.fn();
+const MOCK_INPUTS = { email: "", password: "" };
+const MOCK_HANDLE_ONCHANGE = jest.fn();
+const MOCK_HANDLE_ONSUBMIT = jest.fn();
 
 describe("AuthForm component", () => {
   it("should render when type === SignIn", () => {
@@ -16,13 +16,14 @@ describe("AuthForm component", () => {
         <AuthForm
           errorMessage=""
           type="SIGNIN"
-          handleOnChange={handleOnChange}
-          handleOnSubmit={handleOnSubmit}
-          inputs={inputs}
+          handleOnChange={MOCK_HANDLE_ONCHANGE}
+          handleOnSubmit={MOCK_HANDLE_ONSUBMIT}
+          inputs={MOCK_INPUTS}
           isFormValid={false}
         />
       </MemoryRouter>
     );
+
     expect(pretty(container.innerHTML)).toMatchSnapshot();
   });
 
@@ -32,13 +33,14 @@ describe("AuthForm component", () => {
         <AuthForm
           errorMessage=""
           type="SIGNUP"
-          handleOnChange={handleOnChange}
-          handleOnSubmit={handleOnSubmit}
-          inputs={inputs}
+          handleOnChange={MOCK_HANDLE_ONCHANGE}
+          handleOnSubmit={MOCK_HANDLE_ONSUBMIT}
+          inputs={MOCK_INPUTS}
           isFormValid={false}
         />
       </MemoryRouter>
     );
+
     expect(pretty(container.innerHTML)).toMatchSnapshot();
   });
 
@@ -48,13 +50,14 @@ describe("AuthForm component", () => {
         <AuthForm
           errorMessage="Mock error message"
           type="SIGNIN"
-          handleOnChange={handleOnChange}
-          handleOnSubmit={handleOnSubmit}
-          inputs={inputs}
+          handleOnChange={MOCK_HANDLE_ONCHANGE}
+          handleOnSubmit={MOCK_HANDLE_ONSUBMIT}
+          inputs={MOCK_INPUTS}
           isFormValid={false}
         />
       </MemoryRouter>
     );
+
     expect(pretty(container.innerHTML)).toMatchSnapshot();
   });
 
@@ -64,9 +67,9 @@ describe("AuthForm component", () => {
         <AuthForm
           errorMessage=""
           type="SIGNIN"
-          handleOnChange={handleOnChange}
-          handleOnSubmit={handleOnSubmit}
-          inputs={inputs}
+          handleOnChange={MOCK_HANDLE_ONCHANGE}
+          handleOnSubmit={MOCK_HANDLE_ONSUBMIT}
+          inputs={MOCK_INPUTS}
           isFormValid={false}
         />
       </MemoryRouter>
@@ -82,7 +85,7 @@ describe("AuthForm component", () => {
       fireEvent.click(submitButton);
     });
 
-    expect(handleOnChange).toHaveBeenCalledTimes(2);
-    expect(handleOnSubmit).toHaveBeenCalled();
+    expect(MOCK_HANDLE_ONCHANGE).toHaveBeenCalledTimes(2);
+    expect(MOCK_HANDLE_ONSUBMIT).toHaveBeenCalled();
   });
 });

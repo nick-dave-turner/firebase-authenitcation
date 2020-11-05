@@ -1,7 +1,10 @@
 {
   "name": "firebase-demo",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "author": "Nick-Dave-Turner",
+  "description": "React Firebase authentication demo.",
+  "license": "MIT",
+  "repository": "https://github.com/nick-dave-turner/firebase-authenitcation",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -14,7 +17,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "browserslist": {

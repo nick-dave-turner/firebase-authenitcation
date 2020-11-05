@@ -9,6 +9,7 @@ import { SignUpPage } from "..";
 jest.mock("../../../firebase");
 
 const MOCK_SIGNUP_WITH_EMAIL = jest.fn();
+
 (useAuth as jest.Mock).mockImplementation(() => ({
   signUpWithEmail: MOCK_SIGNUP_WITH_EMAIL,
 }));
@@ -36,6 +37,7 @@ describe("SignUpPage", () => {
           />
         </MemoryRouter>
       );
+
       expect(MOCK_LOCATION.pathname).toBe("/home");
     });
   });
@@ -51,6 +53,7 @@ describe("SignUpPage", () => {
           <SignUpPage />
         </MemoryRouter>
       );
+
       expect(pretty(container.innerHTML)).toMatchSnapshot();
     });
   });
